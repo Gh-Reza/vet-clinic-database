@@ -24,15 +24,11 @@
 
 # 📖 [vet_clinic] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 **[vet_clinic]** is a project that contains SQL files that can be used to create a database for a veterinary clinic.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> List of the technologies used in this project
 
 <details>
 <summary>Database</summary>
