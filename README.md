@@ -44,6 +44,7 @@
 - [x] **[Create a database]**
 - [x] **[Create tables]**
 - [x] **[Add sample data]**
+- [x] **[Query and update the animals table]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,7 +104,6 @@ To run the project, follow these steps:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[Query and update the animals table]**
 - [ ] **[Query multiple tables]**
 - [ ] **[Add 'join table' for visites]**
 - [ ] **[Database performance audit]**
