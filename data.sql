@@ -130,4 +130,14 @@ VALUES (
 (
 	'Jodie Whittaker',
 	38
-)
+);
+
+-- Insert data into species table
+
+INSERT INTO species (name) VALUES ('Pokemon'), ('Digimon');
+
+-- Update the species_id
+
+UPDATE animals SET species_id = 2 WHERE name LIKE '%mon';
+UPDATE animals SET species_id = 1 WHERE species_id IS NULL;
+
