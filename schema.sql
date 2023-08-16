@@ -20,5 +20,20 @@ CREATE TABLE owners (
 CREATE TABLE species (
 	id SERIAL PRIMARY KEY,
 	name VARCHAR(50)
-)
+);
 
+-- Query multiple tables
+
+-- Make the id column in animals table primary key and auto-increment
+ALTER TABLE animals ADD COLUMN new_id SERIAL;
+UPDATE TABLE animals SET new_id = id;
+UPDATE animals SET new_id = id;
+ALTER TABLE animals DROP COLUMN id;
+ALTER TABLE animals RENAME new_id TO id;
+ALTER TABLE animals ADD PRIMARY KEY (id);
+
+ALTER TABLE animals DROP COLUMN species;
+ALTER TABLE animals ADD COLUMN species_id INT;
+ALTER TABLE animals ADD CONSTRAINT fk_species_id FOREIGN KEY (species_id) REFERENCES species(id);
+ALTER TABLE animals ADD COLUMN owner_id INT;
+ALTER TABLE animals ADD CONSTRAINT fk_owner_id FOREIGN KEY (owner_id) REFERENCES owners(id);
