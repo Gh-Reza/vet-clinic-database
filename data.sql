@@ -178,3 +178,26 @@ VALUES (
 	'2008-01-08'
 );
 
+-- Add data to the specializations table
+
+INSERT INTO specializations (
+	vets_id,
+	species_id
+)
+VALUES (
+	1,
+	1
+),
+(
+	3,
+	1
+),
+(
+	3,
+	2
+),
+(
+	4,
+	2
+);
+
