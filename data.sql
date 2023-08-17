@@ -149,3 +149,32 @@ UPDATE animals SET owner_id = 2 WHERE name = 'Gabumon' OR name = 'Pikachu';
 UPDATE animals SET owner_id = 3 WHERE name = 'Devimon' OR name = 'Plantmon'; 
 UPDATE animals SET owner_id = 4 WHERE name = 'Charmander' OR name = 'Squirtle' OR name = 'Blossom'; 
 UPDATE animals SET owner_id = 5 WHERE name = 'Angemon' OR name = 'Boarmon'; 
+
+-- Add data to the vets table
+
+INSERT INTO vets (
+	name,
+	age,
+	date_of_graduation
+)
+VALUES (
+	'William Tatcher',
+	45,
+	'2000-04-23'
+),
+(
+	'Maisy Smith',
+	26,
+	'2019-01-17'
+),
+(
+	'Stephanie Mendez',
+	64,
+	'1981-05-04'
+),
+(
+	'Jack Harkness',
+	38,
+	'2008-01-08'
+);
+
